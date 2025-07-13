@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Research Assistant</title>
+        <link rel="stylesheet" href="sidepanel.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Research Assistant</h2>
+            </div>
+            <div class="actions">
+                <button id="summarizeBtn">Summarize</button>
+                <button id="paraphraseBtn">Paraphrase</button>
+                <button id="suggestBtn">Suggest</button>
+                <button id="citeBtn">Generate Citation</button>
+                <button id="defineBtn">Define</button>
+            </div>
+            <div class="export-section">
+                <label for="exportFormat">Export as:</label>
+                <select id="exportFormat">
+                    <option value="txt">Text (.txt)</option>
+                    <option value="doc">Word (.doc)</option>
+                </select>
+                <button id="exportNotesBtn">Export Notes</button>
+            </div>
+            <div class="notes">
+                <h3>Research notes</h3>
+                <textarea name="notes" id="notes" placeholder="Take Notes Here"></textarea>
+                <button id="saveNotesBtn">Save Notes</button>
+            </div>
+            <div id="results"></div>
+        </div>
+        <script src="sidepanel.js"></script>
+    </body>
+</html>
